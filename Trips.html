@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="Trips.css" />
+<title>Trips</title>
+</head>
+<body>
+<div class="navbar">
+  <a class="Logo" href="Trips.html" alt="Trips">Trips</a>
+  <a style="margin-left:250px;"href="Trips.html">Homes</a>
+  <div class="dropdown">
+		<button class="dropbtn">Tour Trong Nước
+		  <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <div class="header">
+			<h2>Du Lịch Quanh Ta</h2>
+		  </div>
+		  <div class="row">
+			<div class="c1">
+			  <h3>Du Lịch Miền Bắc</h3>
+			  <a href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-trong-nuoc/du-lich-mien-bac/du-lich-ha-noi/">Du Lịch Hà Nội</a>
+			  <a href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-trong-nuoc/du-lich-mien-bac/du-lich-sa-pa/">Du Lịch Sapa</a>
+			  <a href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-trong-nuoc/du-lich-mien-bac/du-lich-ha-long/">Du Lịch Hạ Long</a>
+			</div>
+			<div class="c1">
+			  <h3>Du Lịch Miền Trung</h3>
+			  <a href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-trong-nuoc/du-lich-mien-trung/du-lich-da-nang/">Du Lịch Đà Nẵng</a>
+			  <a href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-trong-nuoc/du-lich-mien-trung/du-lich-phu-yen/">Du Lịch Phú Yên</a>
+			</div>
+			<div class="c1">
+			  <h3>Du Lịch Miền Nam</h3>
+			  <a href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-trong-nuoc/du-lich-mien-nam/du-lich-con-dao/">Du Lịch Côn Đảo</a>
+			  <a href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-trong-nuoc/du-lich-mien-nam/du-lich-phu-quoc/">Du Lịch Phú Quốc</a>
+			</div>
+		  </div>
+		</div>
+	</div>
+		<div class="dropdown">
+			<button class="dropbtn">Tour Nước Ngoài
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+			  <div class="header">
+				<h3>Du Lịch Thế Giới</h2>
+			  </div>
+			  <div class="row">
+				<div class="c1">
+				  <h3>Du Lịch Châu Á</h3>
+				  <a href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-nuoc-ngoai/du-lich-chau-a/du-lich-han-quoc/">Du Lịch Hàn Quốc</a>
+				  <a href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-nuoc-ngoai/du-lich-chau-a/du-lich-nhat-ban/">Du Lịch Nhật Bản</a>	
+				</div>
+				<div class="c1">
+				  <h3>Du Lịch Châu Âu</h3>
+				  <a href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-nuoc-ngoai/du-lich-chau-au/du-lich-anh/">Du Lịch Anh </a>
+				  <a href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-nuoc-ngoai/du-lich-chau-au/du-lich-nga/">Du Lịch Nga</a>
+				</div>
+				<div class="c1">
+				  <h3>Du Lịch Châu Mỹ</h3>
+				  <a href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-nuoc-ngoai/du-lich-chau-my/du-lich-canada/">Du Lịch Canada</a>
+				  <a href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-nuoc-ngoai/du-lich-chau-my/du-lich-my/">Du Lịch Mỹ</a>
+				</div>
+			  </div>
+			</div>
+		</div>
+	<a href="comingsoon.html">Khách Sạn</a>
+    <a href="comingsoon.html">Tin Tức</a>
+	<a href="contact.html">Liên Hệ</a>
+	
+	<form action="" id="search-box">
+		<input type="text" id="search-text"
+		placeholder="Bạn Muốn tìm gì ?" required>
+		<button id="search-btn"><i class="fa-solid fa-magnifying-glass fa-beat" style="color: #74c0fc;"></i></button>
+	</form>
+	<div class="login">
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa-solid fa-user"></i></button>
+
+		<div id="id01" class="modal">
+	  
+		<form class="modal-content animate" action="/action_page.php" method="post">
+		<div class="imgcontainer">
+		  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		  <img src="imp/img_avatar2.png" style="height:300px" alt="Avatar" class="avatar">
+		</div>
+
+		<div class="container">
+		  <label for="uname"><b>Username</b></label>
+		  <input type="text" placeholder="Enter Username" name="uname" required>
+
+		  <label for="psw"><b>Password</b></label>
+		  <input id="myInput" type="password" placeholder="Enter Password" name="psw" required>
+		  <input type="checkbox" onclick="myFunction()">Show Password
+			<script>
+			function myFunction() {
+			  var x = document.getElementById("myInput");
+			  if (x.type === "password") {
+				x.type = "text";
+			  } else {
+				x.type = "password";
+			  }
+			}
+			</script>
+		  <button type="submit">Login</button>
+		  <label>
+			<input type="checkbox" checked="checked" name="remember"> Remember me
+		  </label>
+		</div>
+
+		<div class="container" style="background-color:#f1f1f1">
+		  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+		  <span class="psw">Forgot <a href="#">password?</a></span>
+		</div>
+	  </form>
+	</div>
+
+	<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+
+		</div>
+</div>
+
+
+<div id="slideShow">
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="imp/e.jpg" style="width:100%">
+		  <div class="text"><h2 class="thin-font">Chiêm ngưỡng vẻ đẹp thế giới</h2></div>
+		  <div class="centered">Du lịch giá rẻ, Tour Around the world</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="imp/r.jpg" style="width:100%">
+		  <div class="centered" style="height:500px">Best Hotel Tìm Khách Sạn,Home Stay nhanh chóng</div>
+		</div>
+
+		<div class="mySlides fade">	
+		  <div class="numbertext">3 / 3</div>
+		  <img src="imp/f.jpg" style="width:100%">
+		 
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+	</div>
+	<br>
+<div>
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 7000); // Change image every 2 seconds
+}
+</script>
+<br/><br/>
+<div id="note2">
+	<div class="vl"></div>
+		<div class="ct">
+		Những điểm đến <b>THÚ VỊ</b> đang <b>CHỜ ĐÓN </b> bạn <b>KHÁM PHÁ</b>
+		<p style="width:1000px;font-size:20px"><i>Bạn quá ngột ngạt với khói bụi thành phố, mệt mỏi với những lo toan thường ngày.
+Đặt ngay chuyến du lịch để tạm xa thành phố, hòa mình thiên nhiên tươi đẹp.</i></p>
+	</div>
+</div>
+<div id="picture">
+  <div class="column">
+    <img src="imp/1.jpg" style="width:100%">
+    <img src="imp/2.jpg" style="width:100%">
+    <img src="imp/3.jpg" style="width:100%">
+    <img src="imp/4.jpg" style="width:100%">
+    <img src="imp/5.jpg" style="width:100%">
+    <img src="imp/24.jpg" style="width:100%">
+ 
+  </div>
+  <div class="column">
+    <img src="imp/8.jpg" style="width:100%">
+    <img src="imp/9.jpg" style="width:100%">
+    <img src="imp/10.jpg" style="width:100%">
+    <img src="imp/11.jfif" style="width:100%">
+    <img src="imp/12.jfif" style="width:100%">
+    <img src="imp/6.jpg" style="width:100%">
+	<img src="imp/19.jpg" style="width:100%">	
+	
+  </div>
+  <div class="column">
+    <img src="imp/14.jfif" style="width:100%">
+    <img src="imp/15.jpg" style="width:100%">
+    <img src="imp/t.jpg" style="width:100%">
+    <img src="imp/16.jpg" style="width:100%">
+    <img src="imp/17.jpg" style="width:100%">
+    <img src="imp/18.jpg" style="width:100%">
+
+  </div>
+  <div class="column">
+    <img src="imp/13.jpg" style="width:100%">
+    <img src="imp/21.jpg" style="width:100%">
+    <img src="imp/22.jfif" style="width:100%">
+    <img src="imp/23.jfif" style="width:100%">
+    <img src="imp/24.jpg" style="width:100%">
+    <img src="imp/25.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.fontSize = "30px";
+  } else {
+    document.getElementById("navbar").style.fontSize = "90px";
+  }
+}
+</script>
+<br/><br/><br/>
+
+<div id="note3">
+	<div class="vl"></div>
+	<div class="ct">
+	Đi đến <b>Bất kì</b> đâu trên <b>THẾ GIỚI</b>
+	Chỉ với vài <b>CLICK</b> chuột
+	</div>
+	<div class="nt"><i>Bạn có đam mê <big>“xê dịch”</big> ? Mọi miền tổ quốc bạn đã từng qua. Thì chùm tour vòng quanh Thế giới này sinh ra để dành cho bạn trải nghiệm.</i></div>
+</div>
+<div>
+	<div class="grid-container">
+	  <div class="item">
+	  <div><figure>
+		<img src="imp/31.jpg"/>
+	  </figure></div></div>
+	  <div class="item">
+	   <div><figure>
+		<img src="imp/32.png" width="500" height="300"/>
+	  </figure></div></div>
+	  <div class="item" >
+		<div class="tx" >
+			<h3>Du lịch Châu Âu </h3>
+			<p style="text-align: center;">Khám phá vẻ đẹp lộng lẫy của các thành phố nổi tiếng : Paris &#8211; Bruxelles &#8211; Amsterdam</p>
+			<a class="third after" href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-nuoc-ngoai/du-lich-chau-au/" target="_self" class="button primary is-underline is-small lowercase"  >
+				<span>Xem thêm</span>
+			</a>
+			
+		</div>
+	  </div>  
+	  <div class="item1" >
+		<div class="tx" >
+			<h3>Du lịch Châu Á</h3>
+			<p style="text-align: center;">Là châu lục lớnnhất thế giới. Có nhiều thắng cảnh tại Hàn Quốc, Nhật Bản, Việt Nam,&#8230;</p>
+			<a  class="third after" href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-nuoc-ngoai/du-lich-chau-a/" target="_self" class="button primary is-underline is-small lowercase"  >
+				<span>Xem thêm</span>
+			  </a>
+			
+		</div>
+	  </div>
+	  <div class="item">
+	  <div><figure>
+		<img src="imp/36.jpg"/>
+	  </figure></div>
+	  </div>
+	  <div class="item">
+	  <div><figure>
+		<img src="imp/34.png" width="500" height="300"/>
+	  </figure></div>
+	  </div>
+	  <div class="item">
+	  <div><figure>
+		<img src="imp/35.png" width="500" height="300"/>
+	  </figure></div>
+	  </div>
+	  <div class="item" >
+		<div class="tx" >
+			<h3>Du lịch Châu Mỹ</h3>
+			<p style="text-align: center;">Châu Mỹ được mệnh danh là Tân Thế Giới. Hiện nay tour Châu Mỹ rất nhiều KH quan tâm,&#8230;</p>
+			<a class="third after" href="http://mauweb.monamedia.net/getaway/danh-muc/du-lich-nuoc-ngoai/du-lich-chau-my/" target="_self" class="button primary is-underline is-small lowercase"  >
+				 <span>Xem Thêm</span>
+			  </a>
+		
+		</div>  
+	  </div>
+	  <div class="item">
+		<div><figure>
+		<img src="imp/37.jpg"/>
+	  </figure></div>
+	  </div>
+	 
+	</div>
+
+</div>
+
+<div>
+
+</div>
+<div id="note1">
+	<div class="vl"></div>
+	<div class="ct">
+	Chùm tour <b>Best SALLING</b> của năm <b>2018</b>
+	<p style="width:1000px;font-size:20px"><i>Những tour bán chạy nhất năm nay theo thống kê của chúng tôi. Gọi ngay HOTLINE để được tư vấn cụ thể và thưởng cho mình kì nghỉ dưỡng tuyệt vời.</i></p>
+	</div>
+	
+</div>
+<div id="video">
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/AhP5Tg_BLIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="ff">
+	<div class="ab">
+		<b>Đăng kí ngay</b> để không bỏ lỡ bất kỳ <b>ƯU ĐÃI</b> nào từ chúng tôi
+	<div class="form-tt">
+
+		<form action="#" method="post" name="dang-ky">
+
+		<input type="text" name="username" placeholder="Email của bạn" />
+
+		</form>
+
+	</div>
+	<button class="button button-35" ><a href="ccc.html"style="color:#333">Đăng Kí</a></button>
+	</div>
+</div>
+<br/><br/><br/>
+<div id="feedback">
+	<div id="trai">
+		<img id="anh" src="imp/38.jpg"/>
+	</div>
+	<div id="phai">
+		<div class="vote">
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		</div>
+		<p class="lead" style="text-align: justify">Tôi vừa đi tour du lịch Hàn Quốc ngày 24.03.2017 vừa qua. Cảm nhận ăn ngon chất lượng. Hướng dẫn quá tốt quá nhiệt tình thân thiện chăm sóc chu đáo tận tình. Thay mặt cho gia đình 1 lần nữa cảm ơn MONA Travel.</p>
+        <p class="lead"><b>Peter Nguyễn</b>/Facebook</p>
+	</div>
+</div>
+<br/><br/>
+<div id="chill">
+	<div class="hang">
+	  <div class="cot">
+		<img src="imp/26.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+	  </div>
+	  <div class="cot">
+		<img src="imp/27.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+	  </div>
+	  <div class="cot">
+		<img src="imp/28.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+	  </div>
+	  <div class="cot">
+		<img src="imp/29.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+	  </div>
+	  <div class="cot">
+		<img src="imp/30.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+	  </div>
+	</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="Sl">
+      <div class="numbertext">1 / 5</div>
+      <img src="imp/26.jpg" style="width:100%">
+    </div>
+
+    <div class="Sl">
+      <div class="numbertext">2 / 5</div>
+      <img src="imp/27.jpg" style="width:100%">
+    </div>
+
+    <div class="Sl">
+      <div class="numbertext">3 / 5</div>
+      <img src="imp/28.jpg" style="width:100%">
+    </div>
+    
+    <div class="Sl">
+      <div class="numbertext">4 / 5</div>
+      <img src="imp/29.jpg" style="width:100%">
+    </div>
+    <div class="Sl">
+      <div class="numbertext">5 / 5</div>
+      <img src="imp/30.jpg" style="width:100%">
+     </div>
+    <a class="nguoc" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="tiep" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="cot">
+      <img class="demo cursor" src="imp/26.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="cot">
+      <img class="demo cursor" src="imp/27.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="cot">
+      <img class="demo cursor" src="imp/28.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="cot">
+      <img class="demo cursor" src="imp/29.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="cot">
+      <img class="demo cursor" src="imp/30.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+</div>
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("Sl");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<button onclick="topFunction()" id="ontop" title="Go to top"><i class="fa-solid fa-arrow-up fa-bounce" style="color: #63e6be;"></i></button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("ontop").style.display = "block";
+    } else {
+        document.getElementById("ontop").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</div>
+<div>
+<footer>
+ <div class="container">
+			 <!--Bắt Đầu Nội Dung Giới Thiệu-->
+			 <div class="noi-dung about">
+				<h2 class="container-text">Trips</h2>
+				 <p> "Một chuyến đi không chỉ là sự di chuyển, đó là một hành trình trải nghiệm. Khám phá địa điểm độc đáo và không giới hạn cùng chúng tôi . Tận hưởng mọi khoảnh khắc của chuyến đi của bạn".</p>
+				 <ul class="social-icon">
+					 <li><a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a></li>
+					 <li><a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+					 <li><a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+					 <li><a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+				 </ul>
+			 </div>
+			 <!--Kết Thúc Nội Dung Giới Thiệu-->
+			 <!--Bắt Đầu Nội Dung Đường Dẫn-->
+			 <div class="noi-dung links">
+				 <h2>Đường Dẫn</h2>
+				 <ul>
+					 <li><a href="Trips.html">Trang Chủ</a></li>
+					 <li><a href="#">Về Chúng Tôi</a></li>
+					 <li><a href="#">Thông Tin Liên Lạc</a></li>
+					 <li><a href="#">Dịch Vụ</a></li>
+					 <li><a href="#">Điều Kiện Chính Sách</a></li>
+				 </ul>
+			 </div>
+			 <!--Kết Thúc Nội Dung Đường Dẫn-->
+			 <!--Bắt Đâu Nội Dung Liên Hệ-->
+			 <div class="noi-dung contact">
+				 <h2>Thông Tin Liên Hệ</h2>
+				 <ul class="info">
+					 <li>
+						 <span><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></span>
+						 <span>So 3<br />
+							pho Quyet Thang  Thành Phố Hai Duong<br />
+							 Việt Nam</span>
+					 </li>
+					 <li>
+						 <span><i class="fa fa-phone"></i></span>
+						 <p><a href="#">+84 123 456 789</a>
+							 <br />
+							 <a href="#">+84 987 654 321</a></p>
+					 </li>
+					 <li>
+						 <span><i class="fa fa-envelope"></i></span>
+						 <p><a href="#">thinh31082003@gmail.com</a></p>
+					</li>
+					 <li>
+						 
+<!-- Trigger/Open The Modal -->
+<button id="nut"><i class="fa-solid fa-check" style="color: #1f5141;"></i></button>
+
+<!-- The Modal -->
+<div id="hinh" class="modall">
+
+  <!-- Modal content -->
+  <div class="modall-content">
+    <span class="close">&times;</span>
+    <!-- This is a recreation of the SVG animation that can be found on Wokine.com -->
+
+<div class="hello-parent">
+  
+<svg class="hello-word" width="365" height="365" viewBox="0 0 365 365">
+  
+  
+  <g id="H-letter">
+  <line class="H-left-stroke" x1="17" y1="0" x2="17" y2="124" stroke="#000" fill="none" stroke-width="34" />
+  <line class="H-mid-stroke" x1="33" y1="62" x2="68" y2="62" stroke="#000" fill="none" stroke-width="34" />
+  <line class="H-right-stroke" x1="84" y1="0" x2="84" y2="124" stroke="#000" fill="none" stroke-width="34" />
+  </g>
+  
+  <g id="E-letter">
+    <line class="E-left-stroke" x1="138" y1="0" x2="138" y2="124" stroke="#000" fill="none" stroke-width="34" />
+    <line class="E-top-stroke" x1="154" y1="17" x2="201" y2="17" stroke="#000" fill="none" stroke-width="34" />
+    <line class="E-mid-stroke" x1="154" y1="62" x2="196" y2="62" stroke="#000" fill="none" stroke-width="34" />
+    <line class="E-bottom-stroke" x1="154" y1="107" x2="201" y2="107" stroke="#000" fill="none" stroke-width="34" />
+  </g>
+  
+  <g id="L-one-letter">
+    <line class="L-one-long-stroke" x1="17" y1="153" x2="17" y2="277" stroke="#000" fill="none" stroke-width="34" />
+    <line class="L-one-short-stroke" x1="33" y1="260" x2="77" y2="260" stroke="#000" fill="none" stroke-width="34" />
+  </g>
+  
+  <g id="L-two-letter">
+    <line class="L-two-long-stroke" x1="104" y1="153" x2="104" y2="277" stroke="#000" fill="none" stroke-width="34" />
+    <line class="L-two-short-stroke" x1="120" y1="260" x2="164" y2="260" stroke="#000" fill="none" stroke-width="34" />
+  </g>
+  
+  <g id="O-letter">
+    <circle class="O-stroke" cx="231" cy="215" r="48" stroke="#000" fill="none" stroke-width="31" />
+  </g>
+  
+  <g id="red-dot">
+    <!-- Initially I tried creating a circle but it was harder to manipulate it how I wanted to in CSS so I resorted to using a line trick to make it look like a circle ....
+    
+    <circle class="red-dot" cx="325" cy="260" r="20" fill="#FF5851" stroke="none" />
+
+    -->
+    
+    <line x1="325" y1="260" x2="325" y2="260" stroke="#FF5851" class="red-dot" />
+  </g>
+  
+  
+</svg>
+</div>
+
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("hinh");
+
+// Get the button that opens the modal
+var btn = document.getElementById("nut");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+					 </li>
+				 </ul>
+			 </div>
+			 <!--Kết Thúc Nội Dung Liên Hệ-->
+		 </div>
+	</footer>
+	
+</div>
+</body>
+</html>
